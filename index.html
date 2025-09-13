@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakVerse By Rupesh  </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icon CDN -->
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+
+</head>
+<body>
+    
+    <div class="main">
+
+        <!--  Nav Start  -->
+
+          <nav>
+            <div class="logo">
+                <h1>SneakVerse</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">All Sneakers</a>
+                <a href="#bestsellers">Best Sellers</a>
+                <a href="#performance">Performance</a>
+                <a href="#artisanal">Premium Collection</a>
+                <a href="#about">About Us</a>
+            </div>
+            <div class="btns">
+                <div class="serach-bar">
+                    <label for="search"><i class="ri-search-line"></i></label>
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+
+                <div class="login">
+                    <h3>Log In</h3>
+                    <i class="ri-user-3-fill"></i>
+                </div>
+                <i class="ri-heart-line heart"></i>
+                <i class="ri-shopping-bag-4-line shopping-bag"></i>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#shop" onclick="closeMenu()">Shop All</a>
+            <a href="#bestsellers" onclick="closeMenu()">Best Sellers</a>
+            <a href="#active" onclick="closeMenu()">Active QX</a>
+            <a href="#artisanal" onclick="closeMenu()">Artisanal</a>
+            <a href="#about" onclick="closeMenu()">About Us</a>
+            
+            <div class="mobile-btns">
+                <div class="serach-bar">
+                    <label for="search-mobile"><i class="ri-search-line"></i></label>
+                    <input type="text" id="search-mobile" placeholder="Search">
+                </div>
+                
+                <div class="login">
+                    <h3>Log In</h3>
+                    <i class="ri-user-3-fill"></i>
+                </div>
+                
+                <div style="display: flex; gap: 2rem;">
+                    <i class="ri-heart-line heart"></i>
+                    <i class="ri-shopping-bag-4-line shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section" id="home">
+            <div class="hero">
+                <div class="bgImg">
+                    <div class="left">
+                        <h2>Walking With Purpose.</h2>
+                        <h3>Premium Vegan Sneakers</h3>
+                        <button>Shop Now &nbsp; &nbsp; <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                    <div class="right">
+                        <div class="rightImage">
+                            <h2>Sale</h2>
+                        </div>
+                        <h3>Bio Runner</h3>
+                        <p><span style="text-decoration: line-through; font-weight: 600; color: #000;">$119.00 </span> <span style="color: #1570C3; font-weight: 600;"> $99.00</span></p>
+                        <button class="addbtn">Add to Cart &nbsp; <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        
+        <!--Hero Section End-->
+
+
+
+<section class="best-sellers" id="bestsellers">
+        <div class="best-sellers-header">
+            <h2 class="best-sellers-title">OUR BEST SELLERS</h2>
+            <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://static.wixstatic.com/media/c837a6_9e4500e0fa504a0b9cda0a2390b5e9a8~mv2.jpg/v1/fill/w_538,h_538,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_9e4500e0fa504a0b9cda0a2390b5e9a8~mv2.jpg" alt="Active JR" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Active JR</h3>
+                    <div class="product-price">
+                        <span class="original-price">$80.00</span>
+                        <span class="sale-price discounted">$64.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://static.wixstatic.com/media/c837a6_96481ea655134a6789d7fdc909b280d2~mv2.jpg/v1/fill/w_538,h_538,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_96481ea655134a6789d7fdc909b280d2~mv2.jpg" alt="Bio Original" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bio Original</h3>
+                    <div class="product-price">
+                        <span class="sale-price">$119.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://static.wixstatic.com/media/c837a6_da34515a9ca049c9b729fa92e5f3e25f~mv2.jpg/v1/fill/w_538,h_538,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_da34515a9ca049c9b729fa92e5f3e25f~mv2.jpg" alt="Bio Perform" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bio Perform</h3>
+                    <div class="product-price">
+                        <span class="original-price">$119.00</span>
+                        <span class="sale-price discounted">$99.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYwfHx8ZW58MHx8fHx8" alt="Bio Perform" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bio Perform</h3>
+                    <div class="product-price">
+                        <span class="original-price">$119.00</span>
+                        <span class="sale-price discounted">$99.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bio Perform" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bio Perform</h3>
+                    <div class="product-price">
+                        <span class="original-price">$119.00</span>
+                        <span class="sale-price discounted">$99.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="best-seller-badge">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1673726803855-695741a96051?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Limited DL" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Limited DL</h3>
+                    <div class="product-price">
+                        <span class="sale-price">$129.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----Kid Container Start-------- -->
+
+    <div class="kid-collection" id="kid">
+        <div class="kid-left-content">
+            <h2>KID COLLECTION 20% OF SALE</h2>
+            <P>Exclusive, one-time offer</P>
+            <button class="kid-collection-btn">SHOP NOW</button>
+        </div>
+        <div class="kid-right-content">
+            <div class="kid-img-container">
+            </div>
+       
+        </div>
+    </div>
+
+
+<!-- ----------Scroll Banner --------- -->
+
+
+ <div class="scroll-banner">
+    <div class="scroll-text">
+      ✶ FRESHLY ARRIVED ✶ LIMITED EDITION, FRESHLY ARRIVED ✶ LIMITED EDITION, FRESHLY ARRIVED ✶ LIMITED EDITION,FRESHLY ARRIVED ✶ LIMITED EDITION ✶
+    </div>
+  </div>
+
+<!-- -----------------Collection  Section Start ---------- -->
+
+    <section class="collection-section" id="performance">
+        <div class="collection-header">
+            <h2>SHOP BY COLLECTION</h2>
+            <a href="#">VIEW ALL →</a>
+        </div>
+
+        <div class="collection-grid">
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1584735174914-6b1272458e3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" alt="Active QX">
+            <div class="collection-text">ACTIVE QX →</div>
+        </div>
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1622760806364-5ccac8096b59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHNuZWFrZXJzfGVufDB8fDB8fHww" alt="Kids">
+            <div class="collection-text">KIDS →</div>
+        </div>
+        <div class="collection-card">
+            <img src="https://plus.unsplash.com/premium_photo-1670983858132-c2f3c4dbf08c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8" alt="Artisanal">
+            <div class="collection-text">ARTISANAL →</div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ------------ Showcase Box ------------- -->
+
+
+   <!-- <section class="showcase-box">
+            <div class="showcase-img">
+                <div class="showcase-title">
+                    <h2>STEP INTO SUSTAINABILITY</h2>
+                </div>
+                <div class="showcase-para">
+                    <p>This is the space to introduce visitors to the business or brand. Briefly explain who's behind it, what it does and what makes it unique. Share its core values and what this site has to offer.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- -----------------Sustainable----------------------- -->
+
+ <!-- SneakVerse: About Section (Standalone) -->
+    <!-- Drop this <section> anywhere in your page body. It is self‑contained and scoped. -->
+    <section id="about" class="sv-about">
+        <div class="sv-wrap">
+            <!-- Top: Story + Visual -->
+            <div class="sv-hero">
+                <div class="sv-copy">
+                    <p class="eyebrow">Step Into Sustainability</p>
+                    <h2 class="title">About <span>SneakVerse</span></h2>
+                    <p class="lede">
+                        At <strong>SneakVerse</strong>, we believe sneakers are more than footwear — they’re a
+                        lifestyle, a statement, and a responsibility. We design stylish, high‑performance kicks
+                        that are vegan, eco‑friendly, and built for everyday comfort.
+                    </p>
+                    <ul class="pill-list" aria-label="Core values">
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M20.24 4.56a9.5 9.5 0 0 0-13.44 0l-1 1 6.72 6.72 6.72-6.72-1-1zM4.56 20.24a9.5 9.5 0 0 0 13.44 0l1-1-6.72-6.72-6.72 6.72 1 1z" />
+                            </svg>
+                            Sustainability First
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2l3 7h7l-5.5 4.1L18 21l-6-4-6 4 1.5-7.9L2 9h7z" />
+                            </svg>
+                            Performance & Comfort
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3l9 6-9 6-9-6 9-6zm0 8.5l9 6-9 6-9-6 9-6z" />
+                            </svg>
+                            Artisanal Craft
+                        </li>
+                    </ul>
+                    <div class="cta-row">
+                        <a href="#shop" class="btn btn-primary">Shop Collection</a>
+                        <a href="#sustainability" class="btn btn-ghost">Our Materials</a>
+                    </div>
+                </div>
+
+                <div class="sv-visual">
+                    <figure class="card main">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
+                            alt="SneakVerse eco sneaker floating" loading="lazy">
+                    </figure>
+                    <figure class="card tag tag-1">
+                        <figcaption>
+                            <span class="dot" aria-hidden="true"></span>
+                            Vegan & cruelty‑free
+                        </figcaption>
+                    </figure>
+                    <figure class="card tag tag-2">
+                        <figcaption>
+                            <span class="dot" aria-hidden="true"></span>
+                            Recycled knit upper
+                        </figcaption>
+                    </figure>
+                    <figure class="card tag tag-3">
+                        <figcaption>
+                            <span class="dot" aria-hidden="true"></span>
+                            Cloud‑foam insole
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Middle: Value Cards -->
+            <div class="sv-values">
+                <article class="v-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+                        </svg>
+                    </div>
+                    <h3>Transparent by Design</h3>
+                    <p>We publish material origins and factory audits so you know exactly what you wear.</p>
+                </article>
+                <article class="v-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 21l-8-9 1.5-1.5L12 18l8.5-7.5L22 12z" />
+                        </svg>
+                    </div>
+                    <h3>Built for Motion</h3>
+                    <p>Lightweight soles and ergonomic last for all‑day performance without the footprint.</p>
+                </article>
+                <article class="v-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 6h18v2H3V6zm3 4h12v2H6v-2zm-3 4h18v2H3v-2z" />
+                        </svg>
+                    </div>
+                    <h3>Limited Drops</h3>
+                    <p>Small‑batch releases reduce waste and keep every pair feel‑good & unique.</p>
+                </article>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="sv-stats" role="group" aria-label="Brand impact stats">
+                <div class="stat"><strong>72%</strong><span>Less water used</span></div>
+                <div class="stat"><strong>120K+</strong><span>Pairs loved worldwide</span></div>
+                <div class="stat"><strong>1.8M</strong><span>Bottles upcycled</span></div>
+                <div class="stat"><strong>0%</strong><span>Animal materials</span></div>
+            </div>
+
+            <!-- Bottom: Founder Quote / CTA -->
+            <div class="sv-founder">
+                <blockquote>
+                    “We’re not just selling sneakers; we’re building a movement where style meets purpose.”
+                </blockquote>
+                <div class="meta">
+                    <img src="Dev.jpg"
+                        alt="Founder portrait" loading="lazy">
+                    <div>
+                        <div class="name">Rupesh Sharma</div>
+                        <div class="role">Founder, SneakVerse</div>
+                    </div>
+                </div>
+                <a href="#story" class="btn btn-outline">Read Our Story</a>
+            </div>
+        </div>
+
+        <!-- Styles scoped to .sv-about to avoid conflicts -->
+
+    </section>
+
+<!-- ------------ Testinomial Section------------ -->
+
+
+<section class="testimonial-section">
+  <h2>FIND OUT WHAT PEOPLE ARE SAYING ABOUT SneakVerse</h2>
+  
+  <div class="testimonial-container">
+    <!-- Card 1 -->
+    <div class="testimonial-card">
+      <h3>"Eco-Friendly and Stylish"</h3>
+      <p>"SneakVerse is not just a shoe store, it’s a vibe! Har sneaker yahan pe unique aur stylish hai. Jab se maine yahan se sneakers liye hain, mere outfits ka pura look hi change ho gaya. This place is truly the universe of sneakers!"</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFufGVufDB8fDB8fHww" alt="James Mitchell">
+        <span>James Mitchell</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="testimonial-card">
+      <h3>"Ideal for Active Lifestyles"</h3>
+      <p>"I usually hesitate when buying sneakers online, but SneakVerse won my trust. The website was easy, delivery was fast, and the shoes were 100% authentic. Now I’ll only shop from SneakVerse!"</p>
+      <div class="testimonial-author">
+        <img src="https://plus.unsplash.com/premium_photo-1688572454849-4348982edf7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Rebecca Thompson">
+        <span>Rebecca Thompson</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="testimonial-card">
+      <h3>"My New Daily Essential"</h3>
+      <p>"SneakVerse gave me exactly what I was looking for – comfort with class. The quality, packaging, and overall shopping experience were top-notch. Definitely my go-to sneaker store now."</p>
+      <div class="testimonial-author">
+        <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww" alt="Sophia Navarro">
+        <span>Sophia Navarro</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ----------Footer Section-------------- -->
+
+  <!-- Footer Section -->
+  <section class="footer" id="footer">
+    <!-- Shop -->
+    <div>
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">All Sneakers</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Limited Edition</a></li>
+        <li><a href="#">SneakVerse Kids</a></li>
+        <li><a href="#">About SneakVerse</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return & Refund</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>123 Sneaker Street</p>
+      <p>New York, NY 10001</p>
+      <p>+1 234 567 890</p>
+      <p>support@sneakverse.com</p>
+    </div>
+
+    <!-- Social -->
+    <div>
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h3>Stay in the Loop</h3>
+      <p>Sign up to receive updates, drops & special offers</p>
+      <form>
+        <input type="email" placeholder="Enter your email *" required>
+        <br>
+        <label><input type="checkbox"> Yes, subscribe me to SneakVerse updates *</label><br>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bottom Footer -->
+  <section class="footer-bottom">
+    <div class="footer-logo">SneakVerse</div>
+    <p>© 2025 SneakVerse. All rights reserved. | Built with ❤️ for sneaker lovers</p>
+  </section>
+
+
+
+    </div>  <!--Main End-->
+
+    <script src="script.js"></script>
+</body>
+</html>
